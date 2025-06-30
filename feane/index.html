@@ -4,27 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feane</title>
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <title>Feane - Delicious Food & Restaurant</title> <link rel="icon" type="image/x-icon" href="/images/logo.png">
 
-    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Fonts for Logo and Headings -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet">
 
-    <!-- Your Custom CSS File -->
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
@@ -35,20 +29,21 @@
                 <div class="container">
                     <a class="navbar-brand script-font" href="#">Feane</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                            class="navbar-toggler-icon"></span></button>
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto">
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Book Table</a></li>
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#hero-section">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#menu-section">Menu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about-section">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#book-table-section">Book Table</a></li>
                         </ul>
                         <div class="d-flex align-items-center nav-icons">
-                            <a href="#"><i class="fas fa-user"></i></a>
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                            <a href="#"><i class="fas fa-search"></i></a>
-                            <a href="#" class="btn-custom-yellow d-none d-lg-inline-block ms-3">Order Online</a>
+                            <a href="#" aria-label="User profile"><i class="fas fa-user"></i></a>
+                            <a href="#" aria-label="Shopping cart"><i class="fas fa-shopping-cart"></i></a>
+                            <a href="#" aria-label="Search"><i class="fas fa-search"></i></a>
+                            <a href="#" class="btn-custom-yellow d-none d-lg-inline-block ms-3" title="Order Online">Order Online</a>
                         </div>
                     </div>
                 </div>
@@ -56,7 +51,7 @@
         </header>
 
         <main>
-            <section class="hero-section">
+            <section class="hero-section" id="hero-section">
                 <div class="container">
                     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -67,8 +62,8 @@
                                             <h1 class="script-font">Fast Food Restaurant</h1>
                                             <p>Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente ad
                                                 mollitia laborum quam quisquam esse error unde. Tempora ex doloremque,
-                                                labore, sunt repellat dolore.</p><a href="#"
-                                                class="btn-custom-yellow">Order Now</a>
+                                                labore, sunt repellat dolore.</p>
+                                            <a href="#" class="btn-custom-yellow" title="Order Now">Order Now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -80,8 +75,8 @@
                                             <h1 class="script-font">Delicious Pizza & Pasta</h1>
                                             <p>Itaque aperiam facilis rerum, commodi, temporibus sapiente ad mollitia
                                                 laborum quam quisquam esse error unde. Tempora ex doloremque, labore,
-                                                sunt repellat dolore, iste magni.</p><a href="#"
-                                                class="btn-custom-yellow">View Menu</a>
+                                                sunt repellat dolore, iste magni.</p>
+                                            <a href="#" class="btn-custom-yellow" title="View Our Menu">View Menu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -93,8 +88,8 @@
                                             <h1 class="script-font">Tasty & Fresh Burgers</h1>
                                             <p>Facilis rerum, commodi, temporibus sapiente ad mollitia laborum quam
                                                 quisquam esse error unde. Doloremque, itaque aperiam tempora ex
-                                                doloremque, labore, sunt repellat dolore.</p><a href="#"
-                                                class="btn-custom-yellow">Book a Table</a>
+                                                doloremque, labore, sunt repellat dolore.</p>
+                                            <a href="#" class="btn-custom-yellow" title="Book a Table">Book a Table</a>
                                         </div>
                                     </div>
                                 </div>
@@ -119,25 +114,29 @@
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <div class="offer-card">
-                        <div class="offer-img-wrapper"><img src="/images/o1.jpg" alt="Tasty Burger">
+                        <div class="offer-img-wrapper">
+                            <img src="images/o1.jpg" alt="A delicious burger offer" loading="lazy">
                         </div>
                         <div class="offer-content">
                             <h5 class="script-font">Tasty Thursdays</h5>
-                            <h2>20% <span class="script-font">Off</span></h2><a href="#"
-                                class="btn-custom-yellow btn-order-small">Order Now <i
-                                    class="fas fa-shopping-cart ms-1"></i></a>
+                            <h2>20% <span class="script-font">Off</span></h2>
+                            <a href="#" class="btn-custom-yellow btn-order-small" title="Order Now">
+                                Order Now <i class="fas fa-shopping-cart ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="offer-card">
-                        <div class="offer-img-wrapper"><img src="/images/o2.jpg" alt="Delicious Pizza">
+                        <div class="offer-img-wrapper">
+                            <img src="images/o2.jpg" alt="A delicious pizza offer" loading="lazy">
                         </div>
                         <div class="offer-content">
                             <h5 class="script-font">Pizza Days</h5>
-                            <h2>15% <span class="script-font">Off</span></h2><a href="#"
-                                class="btn-custom-yellow btn-order-small">Order Now <i
-                                    class="fas fa-shopping-cart ms-1"></i></a>
+                            <h2>15% <span class="script-font">Off</span></h2>
+                            <a href="#" class="btn-custom-yellow btn-order-small" title="Order Now">
+                                Order Now <i class="fas fa-shopping-cart ms-1"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -145,137 +144,194 @@
         </div>
     </section>
 
-    <section class="menu-section">
+    <section class="menu-section" id="menu-section">
         <div class="container">
             <div class="heading-container text-center">
                 <h2 class="script-font">Our Menu</h2>
             </div>
             <ul class="filters-menu nav nav-pills justify-content-center">
-                <li class="nav-item"><a class="nav-link active" href="#">All</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Burger</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pizza</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Pasta</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Fries</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">All</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-filter="burger">Burger</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-filter="pizza">Pizza</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-filter="pasta">Pasta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-filter="fries">Fries</a></li>
             </ul>
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f1.png" alt="Delicious Pizza"></div>
+                        <div class="img-box">
+                            <img src="images/f1.png" alt="Delicious Pizza" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Pizza</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$20</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$20</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Pizza" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f2.png" alt="Delicious Burger"></div>
+                        <div class="img-box">
+                            <img src="images/f2.png" alt="Delicious Burger" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Burger</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$15</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$15</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Burger" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f3.png" alt="Delicious Pizza"></div>
+                        <div class="img-box">
+                            <img src="images/f3.png" alt="Delicious Pizza" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Pizza</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$17</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$17</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Pizza" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f4.png" alt="Delicious Pasta"></div>
+                        <div class="img-box">
+                            <img src="images/f4.png" alt="Delicious Pasta" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Pasta</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$18</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$18</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Pasta" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f5.png" alt="French Fries"></div>
+                        <div class="img-box">
+                            <img src="images/f5.png" alt="French Fries" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>French Fries</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$10</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$10</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: French Fries" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f6.png" alt="Delicious Pizza"></div>
+                        <div class="img-box">
+                            <img src="images/f6.png" alt="Delicious Pizza" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Pizza</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$15</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$15</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Pizza" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f7.png" alt="Tasty Burger"></div>
+                        <div class="img-box">
+                            <img src="images/f7.png" alt="Tasty Burger" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Tasty Burger</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$12</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$12</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Tasty Burger" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f8.png" alt="Tasty Burger"></div>
+                        <div class="img-box">
+                            <img src="images/f8.png" alt="Tasty Burger" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Tasty Burger</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$14</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$14</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Tasty Burger" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="menu-card">
-                        <div class="img-box"><img src="/images/f9.png" alt="Delicious Pasta"></div>
+                        <div class="img-box">
+                            <img src="images/f9.png" alt="Delicious Pasta" loading="lazy">
+                        </div>
                         <div class="detail-box">
                             <h5>Delicious Pasta</h5>
                             <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem
                                 repellendus sed eaque</p>
-                            <div class="options"><span class="price">$10</span><a href="#" class="cart-btn"><i
-                                        class="fas fa-shopping-cart"></i></a></div>
+                            <div class="options">
+                                <span class="price">$10</span>
+                                <a href="#" class="cart-btn" aria-label="Add to cart: Delicious Pasta" title="Add to cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center btn-view-more"><a href="#" class="btn-custom-yellow">View More</a></div>
+            <div class="text-center btn-view-more">
+                <a href="#" class="btn-custom-yellow" title="View More Dishes">View More</a>
+            </div>
         </div>
     </section>
 
-    <section class="about-section">
+    <section class="about-section" id="about-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <div class="about-img"><img src="/images/about-img.png" alt="Deconstructed Burger Illustration">
+                    <div class="about-img">
+                        <img src="images/about-img.png" alt="Deconstructed Burger Illustration with Fresh Ingredients" loading="lazy">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -284,15 +340,15 @@
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have
                             suffered alteration in some form, by injected humour, or randomised words which don't look
                             even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
-                            sure there isn't anything embarrassing hidden in the middle of text. All</p><a href="#"
-                            class="btn-custom-yellow">Read More</a>
+                            sure there isn't anything embarrassing hidden in the middle of text. All</p>
+                        <a href="#" class="btn-custom-yellow" title="Read More About Us">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="book-table-section">
+    <section class="book-table-section" id="book-table-section">
         <div class="container">
             <div class="heading-container">
                 <h2 class="script-font">Book A Table</h2>
@@ -300,29 +356,43 @@
             <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <form>
-                        <div class="mb-3"><input type="text" class="form-control" placeholder="Your Name" required>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required
+                                aria-label="Your Name">
                         </div>
-                        <div class="mb-3"><input type="tel" class="form-control" placeholder="Phone Number" required>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required
+                                aria-label="Phone Number">
                         </div>
-                        <div class="mb-3"><input type="email" class="form-control" placeholder="Your Email" required>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required
+                                aria-label="Your Email">
                         </div>
-                        <div class="mb-3"><select class="form-select" required>
+                        <div class="mb-3">
+                            <select class="form-select" required aria-label="Number of persons">
                                 <option value="" disabled selected>How many persons?</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5+</option>
-                            </select></div>
-                        <div class="mb-4"><input type="date" class="form-control" required></div>
-                        <div><button type="submit" class="btn-custom-yellow">BOOK NOW</button></div>
+                                <option value="1">1 person</option>
+                                <option value="2">2 persons</option>
+                                <option value="3">3 persons</option>
+                                <option value="4">4 persons</option>
+                                <option value="5">5+ persons</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <input type="date" class="form-control" required aria-label="Booking Date">
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-custom-yellow">BOOK NOW</button>
+                        </div>
                     </form>
                 </div>
                 <div class="col-lg-6">
-                    <div class="map-container"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.321896001271!2d-74.00847952458445!3d40.71098933748897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1e75344949%3A0x94b4a22b77c57657!2sNew%20York%20City%20Hall!5e0!3m2!1sen!2sus!4v1716382101704!5m2!1sen!2sus"
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.996162386054!2d74.34185207559197!3d31.523098547463518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904a1b0b533e7%3A0x6b445c7e0c4a4a1a!2sMinar-e-Pakistan!5e0!3m2!1sen!2s!4v1719736855194!5m2!1sen!2s"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                            referrerpolicy="no-referrer-when-downgrade" title="Location of Feane Restaurant on Google Maps"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -339,25 +409,29 @@
                         <div class="row justify-content-center">
                             <div class="col-md-6 col-lg-5">
                                 <div class="testimonial-card">
-                                    <div class="author-img-box"><img src="/images/client1.jpg"
-                                            alt="Customer Moana Michell"></div>
+                                    <div class="author-img-box">
+                                        <img src="images/client1.jpg" alt="Customer Moana Michell" loading="lazy">
+                                    </div>
                                     <div class="text-box">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                         </p>
-                                        <h6>Moana Michell</h6><span>magna aliqua</span>
+                                        <h6>Moana Michell</h6>
+                                        <span>magna aliqua</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
                                 <div class="testimonial-card">
-                                    <div class="author-img-box"><img src="/images/client2.jpg"
-                                            alt="Customer Mike Hamell"></div>
+                                    <div class="author-img-box">
+                                        <img src="images/client2.jpg" alt="Customer Mike Hamell" loading="lazy">
+                                    </div>
                                     <div class="text-box">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                         </p>
-                                        <h6>Mike Hamell</h6><span>magna aliqua</span>
+                                        <h6>Mike Hamell</h6>
+                                        <span>magna aliqua</span>
                                     </div>
                                 </div>
                             </div>
@@ -367,25 +441,29 @@
                         <div class="row justify-content-center">
                             <div class="col-md-6 col-lg-5">
                                 <div class="testimonial-card">
-                                    <div class="author-img-box"><img src="/images/client2.jpg"
-                                            alt="Customer Mike Hamell"></div>
+                                    <div class="author-img-box">
+                                        <img src="images/client2.jpg" alt="Customer Mike Hamell" loading="lazy">
+                                    </div>
                                     <div class="text-box">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                         </p>
-                                        <h6>Mike Hamell</h6><span>magna aliqua</span>
+                                        <h6>Mike Hamell</h6>
+                                        <span>magna aliqua</span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-lg-5 d-none d-md-block">
                                 <div class="testimonial-card">
-                                    <div class="author-img-box"><img src="/images/client1.jpg"
-                                            alt="Customer Moana Michell"></div>
+                                    <div class="author-img-box">
+                                        <img src="images/client1.jpg" alt="Customer Moana Michell" loading="lazy">
+                                    </div>
                                     <div class="text-box">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                                         </p>
-                                        <h6>Moana Michell</h6><span>magna aliqua</span>
+                                        <h6>Moana Michell</h6>
+                                        <span>magna aliqua</span>
                                     </div>
                                 </div>
                             </div>
@@ -393,10 +471,14 @@
                     </div>
                 </div>
                 <div class="testimonial-controls">
-                    <a href="#testimonialCarousel" role="button" data-bs-slide="prev"><i
-                            class="fas fa-chevron-left"></i><span class="visually-hidden">Previous</span></a>
-                    <a href="#testimonialCarousel" role="button" data-bs-slide="next"><i
-                            class="fas fa-chevron-right"></i><span class="visually-hidden">Next</span></a>
+                    <a href="#testimonialCarousel" role="button" data-bs-slide="prev" aria-label="Previous testimonial" title="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a href="#testimonialCarousel" role="button" data-bs-slide="next" aria-label="Next testimonial" title="Next">
+                        <i class="fas fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -408,9 +490,15 @@
                 <div class="col-lg-4 text-center text-md-start mb-4 mb-lg-0">
                     <h4 class="script-font">Contact Us</h4>
                     <div class="contact-list">
-                        <a href="#"><i class="fas fa-map-marker-alt"></i><span>Location</span></a>
-                        <a href="tel:+011234567890"><i class="fas fa-phone-alt"></i><span>Call +01 1234567890</span></a>
-                        <a href="mailto:demo@gmail.com"><i class="fas fa-envelope"></i><span>demo@gmail.com</span></a>
+                        <a href="#" title="Our Location">
+                            <i class="fas fa-map-marker-alt"></i><span>Location</span>
+                        </a>
+                        <a href="tel:+011234567890" title="Call Us">
+                            <i class="fas fa-phone-alt"></i><span>Call +01 1234567890</span>
+                        </a>
+                        <a href="mailto:demo@gmail.com" title="Email Us">
+                            <i class="fas fa-envelope"></i><span>demo@gmail.com</span>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center mb-4 mb-lg-0">
@@ -418,29 +506,41 @@
                     <p>Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200
                         Latin words, combined with</p>
                     <div class="footer-socials justify-content-center">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" aria-label="Facebook page" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Twitter profile" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" aria-label="LinkedIn profile" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram profile" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Pinterest profile" title="Pinterest">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-4 text-center">
                     <h4 class="script-font">Opening Hours</h4>
-                    <p>Everyday<br>10.00 Am -10.00 Pm</p>
-                </div>
+                    <p>Everyday<br>10:00 AM - 10:00 PM</p> </div>
             </div>
         </div>
         <div class="footer-info">
-            <p>© 2025 All Rights Reserved By <a href="#">Free Html Templates</a></p>
-            <p>© Distributed By <a href="#">ThemeWagon</a></p>
+            <p>&copy; <span id="currentYear"></span> All Rights Reserved By <a href="https://html.design/" target="_blank" rel="noopener noreferrer">Free Html Templates</a></p>
+            <p>&copy; Distributed By <a href="https://themewagon.com/" target="_blank" rel="noopener noreferrer">ThemeWagon</a></p>
         </div>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous" defer></script> <script>
+        // Dynamically update the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
